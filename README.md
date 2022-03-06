@@ -1,2 +1,50 @@
-# NMT_comparison
-Repository for comparing notable NMT models
+## Overview
+
+This repository covers a series of studies on three notable models with various datasets, tokenizers and schdulers.
+
+Models are Sequence-to-Sequence, Attention and Transformer respectively.
+
+
+Three well-known Machine Translation dataset been used.
+Datasets are WMT, IWSLT and Multi30 respectively 
+
+Tokenizer
+
+LR Scheduler
+
+
+
+
+## Getting Started
+
+### Data Preprocessi
+First thing to do is prepare datasets.
+Original WMT, IWSLT datasets are much greater in volum than multi30k,
+and besides for more convinience for using codes on google colab GPU env.
+set WMT, IWSLT dataset for 30000 for training, 1000 for validation and test
+
+Of course, using large dataset improves performance.
+But the main purpose here is to compare performance of model structures and various techniaues.
+Therefore, similar quantities of data will be used.
+
+For all three datasets, the training data set to about 30,000, and the validation * test dataset are set to about 1,000.
+
+Even if there is no physical GPU to use for the experiment, the code realization experiment is tailored to google colab so that you can freely use it in colab.
+
+
+```bash
+bash prepare_data.sh
+```
+
+prepare_data.sh downloads datasets, builds vocabs, tokenizes original datasets and make integer mapped sequence based on the generate vocabs.
+
+Tokenizers are Word, BPE, Unigram.
+for tokenizing process, sentencepiece library has been used.
+
+
+
+### Train Model
+the main function 
+```bash
+bash run.sh -a train -m <model> 
+```
