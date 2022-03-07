@@ -13,6 +13,28 @@ Tokenizer
 LR Scheduler
 
 
+## Directory Hierarchy
+```bash
+├── checkpoints             # Save Trained model state dicts and Train_record in this directory
+├── configs                 # Configuration files for train, model and vocab are saved in this directory
+├── data                    # Datasets will be stored in this directory. prepare_data.sh create directory and files within
+│   ├── iwslt
+│   ├── multi30k
+│   └── wmt
+├── models                  # Model Structures
+│   ├── seq2seq
+│   ├── seq2seq_attn
+│   └── transformer
+├── prepare_data.sh         # This file carries out Download dataset, Build vocab, Tokenize process
+├── README.md
+├── run.sh                  # Actual Train, Test, Inference with this shell script
+├── scripts                 # Contains Shell Scripts for download, build vocab
+├── train.py
+└── utils                   # Contains Helper functions for data, model, train, test
+
+
+```
+
 
 
 ## Getting Started
