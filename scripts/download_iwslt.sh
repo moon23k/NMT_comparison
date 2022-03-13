@@ -57,7 +57,7 @@ for l in "${langs[@]}"; do
         > raw/test.$l
 done
 
-rm -r de-en
+rm -rf de-en
 
 echo '--- use only 30,000 rows for training dataset ---'
 for lang in "${langs[@]}"; do

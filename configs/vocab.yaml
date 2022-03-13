@@ -1,0 +1,14 @@
+vocab_size: 6000
+character_coverage: 0.9995
+
+unk_id: 0
+unk_piece: "<unk>"
+
+pad_id: 1
+pad_piece: "<pad>"
+
+bos_id: 2
+bos_piece: "<bos>"
+
+eos_id: 3
+eos_piece: "<eos>"
