@@ -2,16 +2,17 @@
 
 This repository covers a series of studies on three notable models with various datasets, tokenizers and schdulers.
 
-Models are Sequence-to-Sequence, Attention and Transformer respectively.
+#### Experimental Variables
+  
+> Models: Sequence-to-Sequence, Attention and Transformer
+  
+> Datasets: WMT, IWSLT and Multi30
 
+> Tokenizers: Word, BPE, Unigram
 
-Three well-known Machine Translation dataset been used.
-Datasets are WMT, IWSLT and Multi30 respectively 
+> LR Scheduler: None, Cosine_Annealing, Cosine_Annealing_with_Warmup, Exponential, Step 
 
-Tokenizer
-
-LR Scheduler
-
+<br>
 
 ## Directory Hierarchy
 ```bash
