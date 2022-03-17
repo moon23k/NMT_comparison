@@ -1,4 +1,4 @@
-vocab_size: 6000
+vocab_size: 18000
 character_coverage: 0.9995
 
 unk_id: 0

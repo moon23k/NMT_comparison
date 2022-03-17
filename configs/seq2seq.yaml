@@ -1,5 +1,5 @@
-input_dim: 6000
-output_dim: 6000
+input_dim: 18000
+output_dim: 18000
 emb_dim: 256
 hidden_dim: 512
 n_layers: 2
