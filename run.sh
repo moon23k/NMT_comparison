@@ -7,7 +7,7 @@ while getopts a:m:d:t:s: flag; do
         m) model=${OPTARG};;
         d) data=${OPTARG};;
         t) tokenizer=${OPTARG};;
-        s_ scheduler=${OPTARG};;
+        s) scheduler=${OPTARG};;
     esac
 done
 

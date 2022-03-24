@@ -164,7 +164,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     assert args.model in ['seq2seq', 'seq2seq_attn', 'transformer']
-    assert args.data in ['wmt', 'iwslt', 'multi30k']
+    assert args.data in ['wmt', 'iwslt', 'wmt_sm', 'iwslt_sm', 'multi30k']
     assert args.tokenizer in ['word', 'bpe', 'unigram']
     assert args.scheduler in ["None", 'cosine_annealing_warm', 'cosine_annealing', 'exponential', 'step']
     

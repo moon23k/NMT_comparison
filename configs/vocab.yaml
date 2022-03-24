@@ -1,5 +1,4 @@
-vocab_size: 18000
-character_coverage: 0.9995
+vocab_size: 6000
 
 unk_id: 0
 unk_piece: "<unk>"

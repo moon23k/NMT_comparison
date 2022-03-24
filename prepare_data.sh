@@ -3,18 +3,14 @@ mkdir -p data
 cd data
 
 
-datasets=(multi30k iwslt wmt)
+datasets=(multi30k iwslt_sm wmt_sm)
 splits=(train valid test)
 tokenizers=(word bpe unigram)
 langs=(en de)
 
 
-
 #Download datasets
-for dataset in "${datasets[@]}"; do
-    bash ../scripts/download_${dataset}.sh
-done
-
+bash ../scripts/download_sm_datasets.sh
 
 
 #Peer Tokenize with sacremoses
