@@ -11,7 +11,7 @@ while getopts a:m:d:t:s: flag; do
     esac
 done
 
-
+echo ""
 echo "$action | model: $model / tokenizer: $tokenizer / scheduler: $s"
 
 if [ $action='train' ]; then
